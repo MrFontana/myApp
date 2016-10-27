@@ -34,4 +34,13 @@ angular.module('myApp', ['ionic'])
           }
         }
       })
+      .state('sidemenu.nav', {
+        url: '/nav',
+        views: {
+          'menuContent' :{
+            controller: 'NavCtrl',
+            templateUrl: 'templates/map.html'
+          }
+        }
+      });
   });
